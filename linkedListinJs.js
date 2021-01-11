@@ -8,7 +8,7 @@ class LinkedList {
 			next : null
 		}
 		this.tail = this.head;  // With one node, the head and the tail is same node
-		this.length = 1; // length is 1, so index will start from 1
+		this.length = 1; 
 	}
  /* append(value) to add a new value/Node to the end of the list */
 	append(value){
@@ -32,7 +32,7 @@ class LinkedList {
 		this.length++
 		return this
 	}
- /* traverse(index) to find a node at a specific index {index starts at 1 here, since this.length is equal to 1 }  */
+ /* traverse(index) to find a node at a specific index */
 	traverse(index){
 		let counter = 0;
 		let currentNode = this.head
