@@ -1,6 +1,6 @@
 // Problem : Build a stack data structure
 
-// Solution : With array
+// Solution : With Linked List
 
 class Stack{
 	constructor(){
