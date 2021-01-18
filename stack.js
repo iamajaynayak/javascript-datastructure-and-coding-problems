@@ -44,3 +44,31 @@ stackCall.push(20)
 stackCall.push(30)
 stackCall.pop()
 stackCall.peek()
+
+
+//Solution : with Array
+
+class Stack{
+	constructor(){
+	this.arr = []
+	}
+	//Look up
+	peek(){
+	return this.arr[this.arr.length-1]
+	}
+	//Insertion
+	push(value){
+	return this.arr.push(value)
+	}
+	//Deletion
+	pop(){
+	return this.arr.pop()
+	}
+}
+
+const stackCall = new Stack()
+stackCall.push(10)
+stackCall.push(20)
+stackCall.push(30)
+stackCall.pop()
+stackCall.peek()
