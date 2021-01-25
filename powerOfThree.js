@@ -16,6 +16,10 @@ function powerOfThree(num){
 		if(3**i === num){
 			return true
 		}
+		// improvements if 3^x > num then return false as the value of 3^x can not be greater than num
+		else if(3**i > num){
+			return false
+		}
 	}
 	// If not found return false
 	return false
