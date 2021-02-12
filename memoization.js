@@ -1,20 +1,22 @@
 // Problem : write a program to add 10 to a number, and cache the value so we don't want our program to take time for same given input
 // Solution : 
 
-const cache = {}  // for caching
-
-function add10(n){
-	if(n in cache){
-		return cache[n]
-	}else{
-		console.og("checking no of time function runs")
-		cache[n] = 10 + n
-		return cache[n]
-	}
+function memoization(){
+  let cache = {} // for caching
+  function addto10(n){
+    if(n in cache){
+      return cache[n]
+    }else{
+      console.log("memories a new value")
+      cache[n] = n + 10;
+      return cache[n]
+    }
+  }
+  return addto10
 }
 
-add10(5)
-add10(5)
-add10(5)
+const memoized = memoization()
+memoized(5)
+memoized(5)
 
 // the function will only run once if the given input is same
