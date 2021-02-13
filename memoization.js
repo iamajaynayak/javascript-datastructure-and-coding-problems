@@ -7,7 +7,7 @@ function memoization(){
     if(n in cache){
       return cache[n]
     }else{
-      console.log("memories a new value")
+      console.log("memorizes a new value")
       cache[n] = n + 10;
       return cache[n]
     }
